@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient"
+    tools:context=".Activity_Device">
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You : "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp"
+            />
+
+
+        <TextView
+            android:id="@+id/points1"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp"
+            />
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device: "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/points2"
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp"
+            />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_marginTop="175dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn1"
+                android:onClick="BuClick"
+                android:layout_width="100sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/btno"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_height="100sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:onClick="BuClick"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="100sp"
+                android:background="@drawable/btno"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_height="100sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:onClick="BuClick"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@drawable/btno"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:layout_width="100sp"
+                android:layout_height="100sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn4"
+                android:onClick="BuClick"
+                android:textSize="50dp"
+                android:background="@drawable/btno"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="100sp"
+                android:layout_height="100sp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:onClick="BuClick"
+                android:background="@drawable/btno"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="100sp"
+                android:layout_height="100sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:onClick="BuClick"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:background="@drawable/btno"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="100sp"
+                android:layout_height="100sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn7"
+                android:onClick="BuClick"
+                android:textSize="50dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="100sp"
+                android:background="@drawable/btno"
+                android:layout_height="100sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:onClick="BuClick"
+
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="100sp"
+                android:background="@drawable/btno"
+                android:layout_height="100sp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:onClick="BuClick"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="100sp"
+                android:background="@drawable/btno"
+                android:layout_height="100sp" />
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:text="Play Again"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>
