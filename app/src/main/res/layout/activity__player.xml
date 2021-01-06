@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
     tools:context=".Activity_Player">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:weightSum="2"
         android:orientation="horizontal">
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:text="0"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
             android:textSize="22dp" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
             android:text="0"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
             android:textSize="22dp" />
 
 
@@ -68,6 +68,7 @@
                 android:id="@+id/btn1"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
+                android:layout_marginRight="2dp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"
                 android:textColor="@color/colorPrimaryDark"
@@ -77,6 +78,7 @@
             <Button
                 android:id="@+id/btn2"
                 android:layout_width="100sp"
+                android:layout_marginRight="2dp"
                 android:layout_height="100sp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"
@@ -88,6 +90,7 @@
                 android:id="@+id/btn3"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
+                android:layout_marginRight="2dp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"
                 android:textColor="@color/colorPrimaryDark"
@@ -108,6 +111,7 @@
                 android:layout_height="100sp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="50dp"
                 android:textStyle="bold" />
@@ -120,6 +124,7 @@
                 android:onClick="BuClick"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="50dp"
+                android:layout_marginRight="2dp"
                 android:textStyle="bold" />
 
 
@@ -127,6 +132,7 @@
                 android:id="@+id/btn6"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
+                android:layout_marginRight="2dp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"
                 android:textColor="@color/colorPrimaryDark"
@@ -148,6 +154,7 @@
                 android:layout_height="100sp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="50dp"
                 android:textStyle="bold" />
@@ -156,6 +163,7 @@
                 android:id="@+id/btn8"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
+                android:layout_marginRight="2dp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"
                 android:textColor="@color/colorPrimaryDark"
@@ -165,6 +173,7 @@
             <Button
                 android:id="@+id/btn9"
                 android:layout_width="100sp"
+                android:layout_marginRight="2dp"
                 android:layout_height="100sp"
                 android:background="@drawable/btno"
                 android:onClick="BuClick"

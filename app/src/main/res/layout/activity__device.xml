@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/gradient"
     tools:context=".Activity_Device">
 
     <LinearLayout
@@ -16,7 +15,7 @@
 
         <TextView
             android:id="@+id/player1"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="70dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="You : "
@@ -31,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
             android:textSize="22dp"
             />
 
@@ -50,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
             android:textSize="22dp"
             />
 
@@ -71,6 +70,7 @@
             <Button
                 android:id="@+id/btn1"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:layout_width="100sp"
                 android:textColor="@color/colorPrimaryDark"
                 android:background="@drawable/btno"
@@ -81,6 +81,7 @@
             <Button
                 android:id="@+id/btn2"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_width="100sp"
                 android:background="@drawable/btno"
@@ -91,6 +92,7 @@
             <Button
                 android:id="@+id/btn3"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:background="@drawable/btno"
                 android:textSize="50dp"
@@ -109,6 +111,7 @@
             <Button
                 android:id="@+id/btn4"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textSize="50dp"
                 android:background="@drawable/btno"
                 android:textStyle="bold"
@@ -119,6 +122,7 @@
             <Button
                 android:id="@+id/btn5"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:background="@drawable/btno"
                 android:textSize="50dp"
                 android:textStyle="bold"
@@ -129,6 +133,7 @@
             <Button
                 android:id="@+id/btn6"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textSize="50dp"
                 android:textStyle="bold"
                 android:background="@drawable/btno"
@@ -148,6 +153,7 @@
             <Button
                 android:id="@+id/btn7"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textSize="50dp"
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold"
@@ -158,7 +164,7 @@
             <Button
                 android:id="@+id/btn8"
                 android:onClick="BuClick"
-
+                android:layout_marginRight="2dp"
                 android:textSize="50dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
@@ -169,6 +175,7 @@
             <Button
                 android:id="@+id/btn9"
                 android:onClick="BuClick"
+                android:layout_marginRight="2dp"
                 android:textSize="50dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimaryDark"
