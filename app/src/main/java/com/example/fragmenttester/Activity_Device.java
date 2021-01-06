@@ -7,10 +7,13 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -23,6 +26,7 @@ public class Activity_Device extends AppCompatActivity {
     ArrayList<Integer> Player2= new ArrayList<Integer>();// hold player 2 data
     private int end = 0;
     TextView play1,play2,point1,point2,again;
+    private LottieAnimationView celebration;
 
     @Override
     public void onBackPressed() {
@@ -36,6 +40,8 @@ public class Activity_Device extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__device);
 
+        celebration = findViewById(R.id.celebration_Time);
+        celebration.setVisibility(View.INVISIBLE);
 
         play1 = findViewById(R.id.player1);
         play2 = findViewById(R.id.player2);
@@ -206,6 +212,7 @@ public class Activity_Device extends AppCompatActivity {
             // We have winer
 
             if (Winer==1){
+                showanimation();
                 Toast.makeText(this,"Congratulation You Win!",Toast.LENGTH_SHORT).show();
                 end =1;
                 String number = point1.getText().toString();
@@ -233,6 +240,18 @@ public class Activity_Device extends AppCompatActivity {
             }
         }
 
+    }
+
+    private void showanimation() {
+        celebration.setVisibility(View.VISIBLE);
+        celebration.playAnimation();
+        Handler mhandler = new Handler();
+        mhandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        }, 600);
     }
 
     void AutoPlay(){

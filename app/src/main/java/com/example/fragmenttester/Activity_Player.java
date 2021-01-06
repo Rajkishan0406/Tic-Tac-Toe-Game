@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -21,6 +24,7 @@ public class Activity_Player extends AppCompatActivity {
     int attempt = 0;
     private int end =0;
     TextView play1,play2,point1,point2,again;
+    private LottieAnimationView celebration;
 
     public void onBackPressed() {
         super.onBackPressed();
@@ -33,6 +37,8 @@ public class Activity_Player extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__player);
 
+        celebration = findViewById(R.id.celebration_time);
+        celebration.setVisibility(View.INVISIBLE);
 
         play1 = findViewById(R.id.player1);
         play2 = findViewById(R.id.player2);
@@ -202,6 +208,7 @@ public class Activity_Player extends AppCompatActivity {
 
             if (Winer==1){
                 end=1;
+                showanimation();
                 Toast.makeText(this," Player 1 is winner ",Toast.LENGTH_SHORT).show();
                 String number = point1.getText().toString();
                 int x = Integer.parseInt(number);
@@ -212,6 +219,7 @@ public class Activity_Player extends AppCompatActivity {
 
             if (Winer==2){
                 end=1;
+                showanimation();
                 Toast.makeText(this,"  PLayer 2 is winner  ",Toast.LENGTH_SHORT).show();
                 String number = point2.getText().toString();
                 int V = Integer.parseInt(number);
@@ -228,6 +236,18 @@ public class Activity_Player extends AppCompatActivity {
             }
         }
 
+    }
+
+    private void showanimation() {
+        celebration.setVisibility(View.VISIBLE);
+        celebration.playAnimation();
+        Handler mhandler = new Handler();
+        mhandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        }, 600);
     }
 
     void AutoPlay(){

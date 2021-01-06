@@ -7,6 +7,7 @@
     android:gravity="center"
     tools:context=".Activity_Device">
 
+
     <LinearLayout
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
@@ -187,6 +188,14 @@
         </TableRow>
     </TableLayout>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/celebration_Time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        app:lottie_rawRes="@raw/celebration"/>
+
     <TextView
         android:id="@+id/again"
         android:layout_width="match_parent"
@@ -198,6 +207,8 @@
         android:textAlignment="center"
         android:textSize="20dp"
         android:gravity="center_horizontal" />
+
+
 
 
 </RelativeLayout>

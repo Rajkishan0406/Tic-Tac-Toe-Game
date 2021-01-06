@@ -6,17 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
-        android:layout_marginTop="125dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textAlignment="center"
-        android:text="Tic-Tac-Toe"
-        android:textStyle="bold"
-        android:textSize="55dp"
-        android:gravity="center_horizontal" />
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:text="Tic-"
+            android:textStyle="bold"
+            android:textSize="55dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:text="Tac"
+            android:textStyle="bold"
+            android:textSize="55dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:text="-Toe"
+            android:textStyle="bold"
+            android:textSize="55dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:lottie_rawRes="@raw/tictoktoe"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
 
     <Button
         android:id="@+id/device"
@@ -25,7 +67,8 @@
         android:text="Play with device"
         android:background="@drawable/btnx"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="250dp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"/>
 
     <Button
         android:id="@+id/player"
@@ -34,7 +77,8 @@
         android:text="Play with Friend"
         android:layout_centerHorizontal="true"
         android:background="@drawable/btnx"
-        android:layout_marginTop="320dp"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"/>
 
     <TextView
         android:layout_width="match_parent"
